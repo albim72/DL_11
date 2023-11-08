@@ -47,3 +47,16 @@ print("__________________________________")
 
 for i,item in enumerate(sklep,100):
     print(f'{i+1}: {item}')
+
+#funkcja wyższego rzędu
+def mapowanie(dane,transformacja):
+    mapa = []
+    for element in dane:
+        mapa.append(transformacja(element))
+    return mapa
+
+
+def mnozenie(wart):
+    return wart*3
+
+print(mapowanie([1,5,8,19,25,67,99],mnozenie))
