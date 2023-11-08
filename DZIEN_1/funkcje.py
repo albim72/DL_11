@@ -19,4 +19,20 @@ print(n)
 print(fx(5,7))
 
 
+#przykład 2 - funkcja ZIP
+
+numerki = [1,2,3,4]
+polskie = ['jedynka','dwójka','trójka','czwórka','piątka']
+english = ('one','two','three','four')
+
+wynik = zip(numerki,polskie,english)
+print(wynik)
+
+wynik_lista = list(wynik)
+print(wynik_lista)
+
+# wynik_set = set(wynik)
+# print(wynik_set)
+
+
 
