@@ -36,3 +36,14 @@ print(wynik_lista)
 
 
 
+#przykład 3 - enumerate
+
+sklep = ['chleb','masło','mleko','ser','jogurt']
+
+for i,item in enumerate(sklep):
+    print(f'{i+1}: {item}')
+
+print("__________________________________")
+
+for i,item in enumerate(sklep,100):
+    print(f'{i+1}: {item}')
