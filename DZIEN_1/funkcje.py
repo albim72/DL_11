@@ -60,3 +60,22 @@ def mnozenie(wart):
     return wart*3
 
 print(mapowanie([1,5,8,19,25,67,99],mnozenie))
+
+#dekoratory
+def dec_minus(value):
+    def wrapper(value):
+        return -1*value
+    return wrapper
+
+def mwartosc(value):
+    return value
+
+print(mwartosc(56))
+print(mwartosc(-3))
+
+@dec_minus
+def minusw(value):
+    return value
+
+print(minusw(56))
+print(minusw(-3))
